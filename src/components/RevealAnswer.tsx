@@ -3,6 +3,7 @@ import { Button } from "react-bootstrap";
 
 export function RevealAnswer(): React.JSX.Element {
     const [answerVisible, setanswerVisible] = useState<boolean>(false);
+    const [answerHintVisible, setanswerHintVisible] = useState<boolean>(false);
 
     function toggleVisibility() {
         if (answerVisible) {
@@ -20,8 +21,7 @@ export function RevealAnswer(): React.JSX.Element {
                     Toggle Answer Visibility
                 </Button>
             </span>
+            {answerHintVisible ? "here is the hint" : ""}
         </div>
     );
-    // const [answerHintVisible, setanswerHintVisible] = useState<boolean>(false);
-    // {answerHintVisible ? "here is the hint" : ""}
 }
