@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
+function veryHelpful(): void {
+    let a: number = 5;
+    a += 5;
+    console.log(a);
+    return;
+}
+
 export function RevealAnswer(): React.JSX.Element {
     const [answerVisible, setanswerVisible] = useState<boolean>(false);
     const [answerHintVisible, setanswerHintVisible] = useState<boolean>(false);
